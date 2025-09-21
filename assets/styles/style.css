@@ -1,0 +1,113 @@
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.owl-carousel .item {
+    position: relative;
+    height: 100vh; 
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%); 
+    text-align: left;
+    z-index: 2;
+    max-width: 50%; 
+}
+
+
+.owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+
+}
+
+
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    width: 0px;
+    height: 0px;
+    color: #9e9e9e;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px; 
+    font-weight: bold;
+    line-height: 60px;
+    margin: 40px;
+    transition: 0.3s;
+}
+.nav-logo{
+    height: 80px;
+}
+
+.banner-heading{
+    color: #fff;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-weight: 800;
+    
+}
+.banner-paragraph{
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: rgb(118, 118, 118) !important;
+    border: none;
+    padding: 8px 10px; 
+    border-radius: 5px; 
+}
+
+.navbar-collapse {
+    color: #fff;
+    padding: 15px;       
+    border-radius: 8px;     
+}
+@media (max-width: 991px) { 
+  .navbar-collapse {
+    background-color: rgb(10, 10, 10);
+  }
+}
+
